@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>poc.UtilizandoSwagger</name>
+    </assembly>
+    <members>
+        <member name="T:poc.UtilizandoSwagger.Controllers.ArticleController">
+            <inheritdoc />
+            <summary>
+            Article Controller
+            </summary>
+        </member>
+        <member name="M:poc.UtilizandoSwagger.Controllers.ArticleController.Get">
+            <summary>
+            Lista de artigos do blog
+            </summary>
+            <remarks>Lista de artigos do blog</remarks>
+        </member>
+        <member name="M:poc.UtilizandoSwagger.Controllers.ArticleController.Get(System.Int32)">
+             <summary>
+             Retorna um artigo especifico
+             </summary>
+            <param name="id">Informe um numero inteiro</param>
+             <response code="200">OK</response>
+             <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:poc.UtilizandoSwagger.Controllers.ArticleController.Post(poc.UtilizandoSwagger.Models.Article)">
+            <summary>
+            Criar um novo artigo
+            </summary>
+            <param name="article">Preencha os campos corretamente para conseguir criar um artigo</param>
+            <returns>Será criado um novo objeto do tipo artigo</returns>
+            <response code="200">Artigo criado com sucesso</response>
+            <response code="500">Preencha os campos corretamente</response> 
+            <response code="400">Ocorreu um erro interno no servidor</response>   
+        </member>
+        <member name="M:poc.UtilizandoSwagger.Controllers.ArticleController.Put(System.Int32,poc.UtilizandoSwagger.Models.Article)">
+            <summary>
+            Atualização do artigo
+            </summary>
+            <param name="id"></param>
+            <param name="article"></param>
+            <returns></returns>
+        </member>
+        <member name="M:poc.UtilizandoSwagger.Controllers.ArticleController.Delete(System.Int32)">
+            <summary>
+            Excluir um artigo
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:poc.UtilizandoSwagger.Models.Article">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:poc.UtilizandoSwagger.Models.Article.Id">
+            <summary>
+             Id do artigo
+             </summary>
+        </member>
+        <member name="P:poc.UtilizandoSwagger.Models.Article.Title">
+            <summary>
+             Titulo do artigo
+             </summary>
+        </member>
+        <member name="P:poc.UtilizandoSwagger.Models.Article.Description">
+            <summary>
+            Descrição do artigo
+            </summary>
+        </member>
+        <member name="P:poc.UtilizandoSwagger.Models.Article.DatePublish">
+            <summary>
+             Data de publicação
+             </summary>
+        </member>
+        <member name="P:poc.UtilizandoSwagger.Models.Article.Author">
+            <summary>
+             Nome do autor
+             </summary>
+        </member>
+        <member name="P:poc.UtilizandoSwagger.Models.Article.ImageUrl">
+            <summary>
+            Url da imagem do artigo
+            </summary>
+        </member>
+    </members>
+</doc>
